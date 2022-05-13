@@ -1,0 +1,803 @@
+/*font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header {
+    overflow: hidden;
+    position: relative;
+    background-color: #29a6dc;
+    height: 100vh;
+}
+
+header > * {
+    position: absolute;
+}
+
+header img {
+    bottom: 0;
+    right: -25%;
+    height: 50%;
+}
+
+header .welcome {
+    z-index: 1;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+}
+
+header div {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header button {
+    padding: 15px 5px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+}
+
+header button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    header h2 {
+        font-size: 2.4rem;
+    }
+
+    header button {
+        margin-top: 30px;
+        line-height: 35px;
+        font-size: 16px;
+
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    header h1 {
+        font-size: 2.6rem;
+    }
+
+    header h2 {
+        font-size: 2.6rem;
+    }
+
+    header button {
+        margin-top: 40px;
+        line-height: 50px;
+        font-size: 2rem;
+    }
+
+    header img {
+        right: -20%;
+    }
+}
+
+@media (oritntation: portrait) and (min-width: 375px) {
+    header img {
+        right: -20%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    header p {
+        font-size: 6rem;
+    }
+
+    header h1 {
+        font-size: 3.2rem;
+    }
+
+    header h2 {
+        font-size: 3.2rem;
+    }
+}
+
+@media (orientation: landscape) {
+    header img {
+        height: 80%;
+        bottom: 0;
+        right: -5%;
+    }
+
+    header div.welcome {
+        top: 15%;
+        left: 7%;
+        right: 48%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 812px) {
+    header img {
+        left: 60%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header img {
+        left: 60%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    header h2 {
+        font-size: 2.8rem;
+    }
+
+    header img {
+        right: -20%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header p {
+        font-size: 5.6rem;
+    }
+
+    header h1 {
+        margin-top: 48px;
+        font-size: 3.4rem;
+    }
+    header h2 {
+        font-size: 3.4rem;
+    }
+
+    header button {
+        margin-top: 80px;
+        font-size: 2.4rem;
+        line-height: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header button {
+        cursor: pointer;
+        transition: background-color .3s ease;
+    }
+
+    header button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    header div.welcome {
+        text-align: left;
+    }
+
+    header p {
+        font-size: 10rem;
+    }
+
+    header h1 {
+        margin-top: 40px;
+        font-size: 3.4rem;
+    }
+
+    header h2 {
+        font-size: 5rem;
+    }
+
+    header button {
+        margin-top: 80px;
+        font-size: 2.8rem;
+        line-height: 70px;
+    }
+    header img {
+        height: 85%;
+        right: 10%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+
+    header p {
+        font-size: 12rem;
+    }
+
+    header h1 {
+        margin-top: 40px;
+        font-size: 3.4rem;
+    }
+
+    header h2 {
+        font-size: 5rem;
+    }
+
+    header button {
+        margin-top: 80px;
+        font-size: 2.8rem;
+        line-height: 70px;
+        padding: 0 40px;
+    }
+
+    header img {
+        right: 0;
+        height: 100%;
+    }
+}
+
+/*HEADER*/
+
+section {
+    min-height: 30vh;
+    margin-top: 30px;
+}
+
+.features {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 5%;
+    text-align: center;
+}
+
+.features h1 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.features p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Saira', sans-serif;
+}
+
+section.features img {
+    width: 100%;
+    margin: 20px auto;
+}
+
+@media (min-width: 360px) {
+    .features p {
+        font-size: 1.6rem;
+    }
+
+    .features h1 {
+        font-size: 2.8rem;
+    }
+
+    .features h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .features h1 {
+        font-size: 4.5rem;
+    }
+
+    .features h2 {
+        font-size: 3.5rem;
+    }
+
+    .features p {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 33px;
+    }
+
+    .features h1 {
+        font-size: 4.5rem;
+    }
+
+    .features h2 {
+        font-size: 2.8rem;
+    }
+
+    .features p {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .features {
+        margin-top: 50px;
+        padding: 5% 2%;
+        text-align: center;
+    }
+
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+
+    .feature h1 {
+        font-size: 10rem;
+    }
+
+    .feature h2 {
+        font-size: 3rem;
+    }
+
+    .feature p {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .features {
+        margin-top: 50px;
+        padding: 5% 2%;
+        text-align: center;
+    }
+
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+
+    .features h1 {
+        font-size: 5rem;
+    }
+
+    .features h2 {
+        font-size: 3.5rem;
+    }
+
+    .features p {
+        font-size: 2.2rem;
+        line-height: 120%;
+        padding: 0 10px;
+    }
+}
+
+/*SEKCJA FEATURES*/
+
+.portfolio {
+    background-color: #000;
+    padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.portfolio .web img {
+    width: 100%;
+}
+
+.portfolio .about {
+    color: #fff;
+    font-family: 'Saira', sans-serif;
+    font-weight: normal;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.portfolio .about h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.portfolio .about p {
+    font-family: 'Saira', sans-serif;
+    font-size: 1.2rem;
+}
+
+.portfolio .project {
+    margin-bottom: 20px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: #ff4f2c;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: #29a6dc;
+}
+
+@media (orientation: landscape) {
+    .web, .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .portfolio .project:nth-of-type(even) .web {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio h1 {
+        font-size: 4rem;
+    }
+
+    .portfolio .about h2 {
+        font-size: 3.5rem;
+    }
+
+    .portfolio .about p {
+        font-size: 1.8rem
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .portfolio .about h2 {
+        font-size: 3.5rem;
+    }
+
+    .portfolio .about p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    .portfolio .about h2 {
+        font-size: 4rem;
+    }
+
+    .portfolio .about p {
+        font-size: 2rem;
+    }
+}
+
+/*SEKCJA PORTFOLIO*/
+
+.slogan {
+    text-align: center;
+    background-image: url(images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.slogan h1 {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.slogan p.text {
+    font-size: 2.3rem;
+}
+
+.slogan p.author {
+    font-size: 3rem;
+    margin-top: 15px;
+    font-family: 'Saira', sans-serif;
+}
+
+.slogan .bg {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+    .slogan {
+        font-size: 2rem;
+    }
+
+    .slogan h1 {
+        font-size: 3rem;
+    }
+
+    .slogan p.author {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .slogan p {
+        font-size: 3.5rem;
+        width: 70%;
+        margin: 0 auto;
+        font-family: 'Saira', sans-serif;
+    }
+
+    .slogan p.auuthor {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .slogan p.text {
+        font-size: 3.5rem;
+    }
+
+    .slogan p.author {
+        font-size: 4rem;
+    }
+}
+
+/*SEKCJA SLOGAN*/
+
+.hobby .item {
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hobby .item p {
+    font-family: 'Saira', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, .5);
+    text-shadow: 0 0 4px #000;
+}
+
+.hobby h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(images/hobby1.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(images/hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(images/hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(images/hobby4.jpg);
+}
+
+@media (min-width: 533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .hobby h1 {
+        font-size: 4rem;
+    }
+
+    .hobby .item p {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hobby .item p {
+        padding: 0;
+        line-height: 40vh;
+        opacity: 0;
+        transition: opacity .3s ease;
+    }
+
+    .hobby .item p:hover {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: background-size .3s ease;
+    }
+
+    .hobby .item:hover {
+        background-size: 120%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hobby h1 {
+        font-size: 6rem;
+    }
+
+    .hobby .item p {
+        font-size: 4rem;
+    }
+}
+
+/*SEKCJA HOBBY*/
+
+.contact {
+    background-color: #000;
+}
+
+.contact h1 {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact .wrap {
+    margin-top: 30px;
+}
+
+.contact input, .contact button, .contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: 'Saira', sans-serif;
+    font-size: 1.6rem;
+    padding: 5px;
+    color: #fff;
+}
+
+.contact input {
+    height: 36px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.contact textarea {
+    height: 120px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.contact button {
+    font-size: 1.4rem;
+    line-height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.contact button:hover {
+    background-color: #222;
+}
+
+.contact .socials {
+    padding: 30px;
+    font-size: 0;
+}
+
+.contact .wrap {
+    padding: 25px;
+    max-width: 1024px; 
+}
+
+.contact .social {
+    padding: 10px 0;
+    color: #fff;
+}
+
+.contact .social img {
+    float: left;
+}
+
+.contact .social span {
+    line-height: 72px;
+    padding-left: 40px;
+    font-size: 2rem;
+    float: left;
+}
+
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact .socials, .contact form {
+        float: left;
+        width: 40%;
+    }
+
+    .contact h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .contact h1 {
+        font-size: 6rem;
+    }
+}
+
+/*SEKCJA KONTAKT*/
+
+footer {
+    background-color: #29a6dc;
+    color: #fff;
+    font-family: 'Saira', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    min-height: 20vh;
+    line-height: 20vh;
+}
+
+@media (min-width: 533px ) {
+    footer {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    footer {
+        font-size: 4.5rem;
+    }
+}
+
+/*FOOTER*/
