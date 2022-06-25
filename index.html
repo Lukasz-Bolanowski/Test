@@ -2,137 +2,50 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&family=Saira:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <title>Video project</title>
     <link rel="stylesheet" href="style.css">
-   
 </head>
 <body>
     <header>
-        <div class="welcome">
-        <p>witaj!</p>
-        <h1>jestem adam kowalski</h1>
-        <h2>web developer - freelancer</h2>
-        <button><a href="#anchor">poznaj moje portfolio</a></button>
-        </div>
-        <img src="images/photo1.png" alt="Zdjęcie Adam Kowalski">
+        <button class="hamburger">
+            <span class="hamburger__container">
+                <span class="hamburger__bars"></span>
+            </span>
+        </button>
+    
+        <aside>
+            <nav class="moble">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <nav class="desktop">
+            <span class="logo">page title</span>
+            <ul class="menu">
+                <li class="menu__item"><a href="#">home</a></li>
+                <li class="menu__item"><a href="#">products</a></li>
+                <li class="menu__item"><a href="#">shop</a></li>
+                <li class="menu__item"><a href="#">about</a></li>
+            </ul>
+        </nav>
+       <div class="wrapper">
+        <h1 class="title">Video project</h1>
+        <p>Poznaj szczegółowo naszą ofertę</p>
+       </div>
+        <video class="video-container played" muted autoplay loop>
+            <source src="Videos/Viedo v2.mp4" typr="video/mp4">
+        </video>
+        <button class="switch">
+            Pause
+        </button>
     </header>
-    <section class="features clearfix" id="anchor">
-        <h1 class="intro">Tworzę bardzo dobre strony internetowe</h1>
-        <div class="feature">
-            <img src="images/services1.png" alt="Logo HTML, CSS i JS">
-            <h2>Nowoczesne i zgodne z dzisiejszymi standardami</h2>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odit alias quo consectetur in voluptatum impedit ea aut dolorum mollitia. Quibusdam minus libero atque, dolores delectus perspiciatis excepturi corrupti, omnis illo consequuntur obcaecati. Sequi porro deleniti reprehenderit doloribus architecto beatae?</p>
-        </div>
-        <div class="feature">
-            <img src="images/services2.png" alt="Logo HTML, CSS i JS">
-            <h2>Zoptymalizowane pod kątem wyszukiwarek internetowych</h2>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odit alias quo consectetur in voluptatum impedit ea aut dolorum mollitia. Quibusdam minus libero atque, dolores delectus perspiciatis excepturi corrupti, omnis illo consequuntur obcaecati. Sequi porro deleniti reprehenderit doloribus architecto beatae?</p>
-        </div>
-        <div class="feature">
-            <img src="images/services3.png" alt="Logo HTML, CSS i JS">
-            <h2>Świetnie wyglądające na urządzeniach mobilnych</h2>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odit alias quo consectetur in voluptatum impedit ea aut dolorum mollitia. Quibusdam minus libero atque, dolores delectus perspiciatis excepturi corrupti, omnis illo consequuntur obcaecati. Sequi porro deleniti reprehenderit doloribus architecto beatae?</p>
-        </div>
-    </section>
-    <section class="portfolio">
-        <h1>Projekty, które zrealizowałem</h1>
-        <div class="project clearfix">
-            <div class="web">
-                <img src="images/photo_1.png" alt="Portfolio przykład 1">
-            </div>
-            <div class="about">
-                <h2>Projekt &rdquo;Właściwości position&rdquo;</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestias sunt perspiciatis dolorum incidunt repellat debitis a dolore quaerat veniam tempora, excepturi vitae dolores doloribus facere voluptatum quae. Accusamus, neque. Accusantium autem dolores placeat sed alias quis at. Molestiae nostrum labore, numquam commodi expedita vitae velit animi deserunt illo dolor!</p>
-            </div>
-        </div>
-        <div class="project clearfix">
-            <div class="web">
-                <img src="images/photo_2.png" alt="Portfolio przykład 2">
-            </div>
-            <div class="about">
-                <h2>Projekt &rdquo;Strona dla firmy&rdquo;</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestias sunt perspiciatis dolorum incidunt repellat debitis a dolore quaerat veniam tempora, excepturi vitae dolores doloribus facere voluptatum quae. Accusamus, neque. Accusantium autem dolores placeat sed alias quis at. Molestiae nostrum labore, numquam commodi expedita vitae velit animi deserunt illo dolor!</p>
-            </div>
-        </div>
-        <div class="project clearfix">
-            <div class="web">
-                <img src="images/photo_3.png" alt="Portfolio przykład 3">
-            </div>
-            <div class="about">
-                <h2>Projekt &rdquo;CSS i JavaScript&rdquo;</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestias sunt perspiciatis dolorum incidunt repellat debitis a dolore quaerat veniam tempora, excepturi vitae dolores doloribus facere voluptatum quae. Accusamus, neque. Accusantium autem dolores placeat sed alias quis at. Molestiae nostrum labore, numquam commodi expedita vitae velit animi deserunt illo dolor!</p>
-            </div>
-        </div>
-        <div class="project clearfix">
-            <div class="web">
-                <img src="images/photo_4.png" alt="Portfolio przykład 4">
-            </div>
-            <div class="about">
-                <h2>Projekt &rdquo;Menu i formularz&rdquo;</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum molestias sunt perspiciatis dolorum incidunt repellat debitis a dolore quaerat veniam tempora, excepturi vitae dolores doloribus facere voluptatum quae. Accusamus, neque. Accusantium autem dolores placeat sed alias quis at. Molestiae nostrum labore, numquam commodi expedita vitae velit animi deserunt illo dolor!</p>
-            </div>
-        </div>
-    </section>
-    <section class="slogan">
-        <div class="bg">
-        <h1>Moje życiowe motto</h1>
-        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, dolorem odit maiores nihil quaerat officia, dolore perspiciatis ducimus soluta, quia cumque necessitatibus. Nulla sequi distinctio, reiciendis iusto corporis ut deserunt minima incidunt voluptas consequatur, iste, voluptatum suscipit veniam accusantium nisi praesentium molestiae nam! Quisquam totam impedit, quaerat repudiandae ab illo.</p>
-        <p class="author">Jan Nowak</p>
-        </div>
-    </section>
-    <section class="hobby clearfix">
-        <h1>W wolnym czasie uwielbiam...</h1>
-        <div class="item clearfix">
-        <p>Chodzić po górach</p>
-        </div>
-        <div class="item clearfix">
-        <p>Jeździć na wycieczki</p>
-        </div>
-        <div class="item clearfix">
-        <p>Rozwijać nowoczesne technologie</p>
-        </div>
-        <div class="item clearfix">
-        <p>Lubię gotować</p>
-        </div>
-    </section>
-    <section class="contact">
-        <h1>Skontaktuj się ze mną</h1>
-        <div class="wrap clearfix">
-            <form action="https://formsubmit.co/lukasz.bolanowski@onet.pl" method="POST">
-                <input name="name" type="text" placeholder="Twoje imię">
-                <input name="email" type="email" placeholder="E-mail">
-                <textarea name="message" placeholder="Napisz wiadomość"></textarea>
-                <button type="submit">Wyślij wiadomość</button>
-            </form>
-            <div class="socials">
-                <div class="social clearfix">
-                    <img src="images/contact1.png" alt="Kontakt">
-                    <span>mail@domena.pl</span>
-                </div>
-                <div class="social clearfix">
-                    <img src="images/contact2.png" alt="Kontakt">
-                    <span>826 465 725</span>
-                </div>
-                <div class="social clearfix">
-                    <img src="images/contact3.png" alt="Kontakt">
-                    <span>adamnowak</span>
-                </div>
-                <div class="social clearfix">
-                    <img src="images/contact4.png" alt="Kontakt">
-                    <span>@adamnowak</span>
-                </div>
-                <div class="social clearfix">
-                    <img src="images/contact5.png" alt="Kontakt">
-                    <span>AdamNowak</span>
-                </div>
-            </div>
-        </div>
-    </section>
-   <footer>
-       <p>Adam Nowak &copy; Wszelkie prawa zastrzeżone.</p>
-   </footer>
+    <script src="hamburgerMenu.js"></script>
+    <script src="handleVideo.js"></script>
 </body>
 </html>
